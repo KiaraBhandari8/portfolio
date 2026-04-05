@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiara Bhandari | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">KB<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting animate-in">Hi there, I'm</p>
+        <h1 class="hero-name animate-in">Kiara <span>Bhandari</span></h1>
+        <div class="hero-typing animate-in">
+          <span>I'm a </span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+        <p class="hero-tagline animate-in">Passionate about building things that matter & making an impact.</p>
+        <div class="hero-cta animate-in">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-socials animate-in">
+          <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="mailto:kiara@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-image animate-in">
+        <div class="hero-image-wrapper">
+          <div class="hero-image-bg"></div>
+          <div class="hero-avatar">
+            <i class="fas fa-user-astronaut"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title" data-animate>About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-image" data-animate>
+          <div class="about-image-frame">
+            <div class="about-avatar">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-count="10">0</span>+
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="5">0</span>+
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="3">0</span>+
+              <span class="stat-label">Years Learning</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content" data-animate>
+          <h3>Curious mind. Creative thinker. Constant learner.</h3>
+          <p>I'm Kiara, a student with a deep passion for technology, creativity, and making a positive impact. Whether it's coding a new project, leading a team, or volunteering in my community, I bring energy and dedication to everything I do.</p>
+          <p>I believe in learning by doing, and I'm always exploring new technologies, frameworks, and ideas. My goal is to use my skills to solve real-world problems and contribute to meaningful projects.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-lightbulb"></i>
+              <span>Problem Solver</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-users"></i>
+              <span>Team Player</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-rocket"></i>
+              <span>Fast Learner</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-palette"></i>
+              <span>Creative Thinker</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-animate>My <span>Experience</span></h2>
+      <div class="timeline" data-animate>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2024 - Present</div>
+            <h3>Web Development Intern</h3>
+            <h4>Company Name</h4>
+            <p>Developed responsive web applications using modern frameworks. Collaborated with cross-functional teams to deliver features on time.</p>
+            <div class="timeline-tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2023 - 2024</div>
+            <h3>Student Researcher</h3>
+            <h4>School Science Program</h4>
+            <p>Conducted research on machine learning applications in environmental science. Presented findings at school science fair and won recognition.</p>
+            <div class="timeline-tags">
+              <span>Python</span>
+              <span>ML</span>
+              <span>Research</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2022 - 2023</div>
+            <h3>Team Lead - Robotics Club</h3>
+            <h4>School Robotics Championship</h4>
+            <p>Led a team of 5 students in designing and programming robots for inter-school competitions. Secured top positions at district level.</p>
+            <div class="timeline-tags">
+              <span>Arduino</span>
+              <span>Leadership</span>
+              <span>Robotics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer Work Section -->
+  <section id="volunteer" class="section">
+    <div class="container">
+      <h2 class="section-title" data-animate>Volunteer <span>Work</span></h2>
+      <p class="section-subtitle" data-animate>Giving back to the community is at the heart of everything I do.</p>
+      <div class="volunteer-grid">
+        <div class="volunteer-card" data-animate>
+          <div class="volunteer-icon">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3>Community Tech Workshops</h3>
+          <p>Organized and led free coding workshops for underprivileged students, teaching basic programming and digital literacy skills.</p>
+          <div class="volunteer-meta">
+            <span><i class="fas fa-calendar"></i> 2023 - Present</span>
+            <span><i class="fas fa-users"></i> 50+ Students</span>
+          </div>
+        </div>
+        <div class="volunteer-card" data-animate>
+          <div class="volunteer-icon">
+            <i class="fas fa-tree"></i>
+          </div>
+          <h3>Environmental Campaign</h3>
+          <p>Volunteered for local environmental drives including tree plantation, beach cleanups, and awareness campaigns about sustainability.</p>
+          <div class="volunteer-meta">
+            <span><i class="fas fa-calendar"></i> 2022 - Present</span>
+            <span><i class="fas fa-leaf"></i> 200+ Trees</span>
+          </div>
+        </div>
+        <div class="volunteer-card" data-animate>
+          <div class="volunteer-icon">
+            <i class="fas fa-book-reader"></i>
+          </div>
+          <h3>Peer Tutoring Program</h3>
+          <p>Volunteered as a peer tutor helping fellow students with math, science, and computer science subjects after school hours.</p>
+          <div class="volunteer-meta">
+            <span><i class="fas fa-calendar"></i> 2021 - Present</span>
+            <span><i class="fas fa-user-graduate"></i> 30+ Peers</span>
+          </div>
+        </div>
+        <div class="volunteer-card" data-animate>
+          <div class="volunteer-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Charity Fundraiser</h3>
+          <p>Organized fundraising events and donation drives for local NGOs, raising funds for education and healthcare of underprivileged children.</p>
+          <div class="volunteer-meta">
+            <span><i class="fas fa-calendar"></i> 2023</span>
+            <span><i class="fas fa-rupee-sign"></i> Raised 50K+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-animate>My <span>Projects</span></h2>
+      <p class="section-subtitle" data-animate>A collection of things I've built and worked on.</p>
+      <div class="project-filters" data-animate>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="other">Other</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="web" data-animate>
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-globe"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="View Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>A modern, interactive personal portfolio built with HTML, CSS, and JavaScript featuring smooth animations and responsive design.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="ml" data-animate>
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-brain"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="View Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Lake Water Level Predictor</h3>
+            <p>Deep CNN model that forecasts future lake conditions using LANDSAT-7 satellite data for conservation strategies.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>TensorFlow</span>
+              <span>CNN</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="web" data-animate>
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-robot"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="View Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>AI Chatbot - YAGYA</h3>
+            <p>An intelligent chatbot built for a science fair that uses NLP to answer science-related queries conversationally.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>NLP</span>
+              <span>Flask</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="other" data-animate>
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-shield-alt"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="View Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Cyber Kill Chain Demo</h3>
+            <p>Demonstration project analyzing each phase of a cyber-attack using the Lockheed Martin Cyber Kill Chain framework.</p>
+            <div class="project-tags">
+              <span>Security</span>
+              <span>Networking</span>
+              <span>Analysis</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="other" data-animate>
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-robot"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="View Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>IRC Robotics Project</h3>
+            <p>Inter-School Robotics Championship project that secured top 20 national position among 1,000+ teams.</p>
+            <div class="project-tags">
+              <span>Arduino</span>
+              <span>Robotics</span>
+              <span>C++</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="ml" data-animate>
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-dna"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View Project"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="View Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Gene Editing Research</h3>
+            <p>Research project on gene editing and mutations with special focus on COVID mutation patterns. National scholarship finalist.</p>
+            <div class="project-tags">
+              <span>Bioinformatics</span>
+              <span>Research</span>
+              <span>Data Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title" data-animate>My <span>Skills</span></h2>
+      <div class="skills-grid" data-animate>
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Python</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HTML/CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>C/C++</span>
+                <span>60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" data-width="60"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools & Frameworks</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>React</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>TensorFlow</span>
+                <span>65%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" data-width="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Git/GitHub</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Arduino</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-star"></i> Soft Skills</h3>
+          <div class="soft-skills">
+            <span class="soft-skill-tag">Leadership</span>
+            <span class="soft-skill-tag">Communication</span>
+            <span class="soft-skill-tag">Teamwork</span>
+            <span class="soft-skill-tag">Problem Solving</span>
+            <span class="soft-skill-tag">Public Speaking</span>
+            <span class="soft-skill-tag">Time Management</span>
+            <span class="soft-skill-tag">Creativity</span>
+            <span class="soft-skill-tag">Adaptability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-animate>Get In <span>Touch</span></h2>
+      <p class="section-subtitle" data-animate>Have a project in mind or just want to say hi? I'd love to hear from you!</p>
+      <div class="contact-grid">
+        <div class="contact-info" data-animate>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>kiara@example.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Mumbai, India</p>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" data-animate id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required>
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject" required>
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Designed & Built by <span>Kiara Bhandari</span></p>
+      <p class="footer-copy">&copy; 2026 All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
