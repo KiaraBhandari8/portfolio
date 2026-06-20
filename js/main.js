@@ -1,67 +1,38 @@
 // Mobile nav toggle
-const navToggle = document.getElementById('navToggle');
-const navLinks = document.getElementById('navLinks');
-
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+document.getElementById('navToggle').addEventListener('click', function() {
+  document.getElementById('navLinks').classList.toggle('open');
 });
 
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
+document.querySelectorAll('.nav-links a').forEach(function(link) {
+  link.addEventListener('click', function() {
+    document.getElementById('navLinks').classList.remove('open');
+  });
 });
 
-// Back to top button
-const backToTop = document.getElementById('backToTop');
+// Scroll animations
+var fadeEls = document.querySelectorAll('.explore-card, .highlight-big, .about-layout, .fun-facts, .featured-sport, .sport-tile, .leadership-card, .service-block, .activity-card, .contact-layout');
+fadeEls.forEach(function(el) { el.classList.add('fade-up'); });
 
-window.addEventListener('scroll', () => {
-  backToTop.classList.toggle('visible', window.scrollY > 400);
-});
-
-// Scroll fade-up animations
-const fadeEls = document.querySelectorAll('.section-header, .about-text, .about-stats, .timeline-item, .card, .project-card, .skill-group, .contact-info, .contact-form');
-
-fadeEls.forEach(el => el.classList.add('fade-up'));
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
   });
 }, { threshold: 0.1 });
 
-fadeEls.forEach(el => observer.observe(el));
+fadeEls.forEach(function(el) { observer.observe(el); });
 
-// Project filter
-const filterBtns = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
-
-filterBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    filterBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-
-    const filter = btn.dataset.filter;
-
-    projectCards.forEach(card => {
-      if (filter === 'all' || card.dataset.category === filter) {
-        card.classList.remove('hidden');
-      } else {
-        card.classList.add('hidden');
-      }
-    });
+// Contact form
+var form = document.getElementById('contactForm');
+if (form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = form.querySelector('button');
+    btn.innerHTML = '<i class="fas fa-check"></i> sent!';
+    btn.style.background = '#B5C9A1';
+    setTimeout(function() {
+      btn.innerHTML = 'send message <i class="fas fa-arrow-right"></i>';
+      btn.style.background = '';
+      form.reset();
+    }, 2500);
   });
-});
-
-// Contact form (demo)
-document.getElementById('contactForm').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const btn = e.target.querySelector('button');
-  btn.innerHTML = '<i class="fas fa-check"></i> Sent!';
-  btn.style.background = '#4ECDC4';
-  setTimeout(() => {
-    btn.innerHTML = 'Send message <i class="fas fa-arrow-right"></i>';
-    btn.style.background = '';
-    e.target.reset();
-  }, 2500);
-});
+}
