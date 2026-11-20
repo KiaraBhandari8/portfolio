@@ -1014,3 +1014,68 @@ a > img:hover {
   .form-row { grid-template-columns: 1fr; }
   .photo-grid-small { grid-template-columns: 1fr; }
 }
+
+
+/* ===== Robotics Gallery ===== */
+
+.robotics-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin: 24px 0 45px;
+}
+
+.robotics-gallery img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.robotics-gallery img:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+#robotics-gallery h3 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    margin: 35px 0 10px;
+}
+
+#robotics-gallery p {
+    color: var(--text-soft);
+    font-size: 14.5px;
+    margin-bottom: 16px;
+}
+
+.certification-image {
+    max-width: 550px;
+    margin: 24px auto;
+    text-align: center;
+}
+
+.certification-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.certification-image p {
+    margin-top: 14px;
+}
+
+/* Mobile layout */
+@media (max-width: 640px) {
+    .robotics-gallery {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .robotics-gallery img {
+        height: 230px;
+    }
+}
