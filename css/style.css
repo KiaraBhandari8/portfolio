@@ -1109,3 +1109,348 @@ a > img:hover {
         max-width: 280px;
     }
 }
+
+
+/* =====================================
+   INTERACT CLUB FEATURE SECTION
+===================================== */
+
+.interact-feature {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/* Section heading */
+
+.interact-heading {
+    max-width: 650px;
+    margin-bottom: 35px;
+}
+
+.interact-heading h2 {
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 12px 0 10px;
+}
+
+.interact-heading .section-subtitle {
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* Main card */
+
+.interact-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    padding: 38px;
+    background: var(--bg-card);
+    border: 1px solid rgba(195, 177, 225, 0.22);
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+    align-items: start;
+}
+
+/* Text content */
+
+.interact-content {
+    min-width: 0;
+}
+
+.interact-eyebrow {
+    display: inline-block;
+    color: #A17CBF;
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.interact-intro h3 {
+    font-family: var(--font-display);
+    font-size: 27px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 17px;
+}
+
+.interact-intro p {
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.85;
+    color: var(--text-soft);
+    margin-bottom: 15px;
+}
+
+.interact-intro strong {
+    color: var(--text);
+    font-weight: 650;
+}
+
+/* Statistics */
+
+.interact-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 28px 0 32px;
+}
+
+.interact-stat {
+    padding: 17px 12px;
+    background: #FFF9F7;
+    border: 1px solid rgba(244, 167, 187, 0.2);
+    border-radius: 13px;
+    text-align: center;
+}
+
+.interact-stat-number {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 5px;
+}
+
+.interact-stat-label {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 10px;
+    line-height: 1.5;
+    color: var(--text-soft);
+}
+
+/* Leadership journey */
+
+.interact-journey h4,
+.interact-initiatives h4 {
+    font-family: var(--font-display);
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 17px;
+}
+
+.interact-timeline {
+    border-left: 1.5px solid #E8DDED;
+    margin-left: 7px;
+    padding: 0 0 0 21px;
+}
+
+.interact-role {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 19px;
+}
+
+.interact-role:last-child {
+    padding-bottom: 0;
+}
+
+.interact-role-dot {
+    position: absolute;
+    left: -27px;
+    top: 4px;
+    width: 11px;
+    height: 11px;
+    background: #D9C9E9;
+    border: 2px solid var(--bg-card);
+    border-radius: 50%;
+}
+
+.current-role .interact-role-dot {
+    background: var(--blush);
+    box-shadow: 0 0 0 3px rgba(244, 167, 187, 0.15);
+}
+
+.interact-role-year {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 3px;
+}
+
+.interact-role-name {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.interact-current {
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+    color: #8A709E;
+    background: #F1EAF7;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+/* Initiatives */
+
+.interact-initiatives {
+    margin-top: 32px;
+}
+
+.interact-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.interact-tags span {
+    display: inline-block;
+    padding: 8px 13px;
+    background: #F7F2FA;
+    border: 1px solid #EDE3F3;
+    border-radius: 30px;
+    color: #78658B;
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+/* =====================================
+   PHOTO GALLERY
+===================================== */
+
+.interact-gallery {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-rows: 230px 180px 180px auto;
+    gap: 13px;
+    align-content: start;
+    min-width: 0;
+}
+
+.interact-photo {
+    display: block;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #F5EDF5;
+    box-shadow: var(--shadow);
+}
+
+.interact-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+
+.interact-photo:hover img {
+    transform: scale(1.045);
+}
+
+.interact-photo-main {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.interact-gallery .interact-photo:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.interact-gallery .interact-photo:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.interact-photo-wide {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+.interact-gallery-caption {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 2px;
+    font-family: var(--font-body);
+    font-size: 9px;
+    letter-spacing: 1.4px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 950px) {
+    .interact-card {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .interact-gallery {
+        grid-template-rows: 260px 190px 190px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .interact-feature {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .interact-heading h2 {
+        font-size: 29px;
+    }
+
+    .interact-card {
+        padding: 23px 19px;
+        gap: 30px;
+        border-radius: 17px;
+    }
+
+    .interact-intro h3 {
+        font-size: 23px;
+    }
+
+    .interact-intro p {
+        font-size: 13px;
+    }
+
+    .interact-stats {
+        gap: 7px;
+    }
+
+    .interact-stat {
+        padding: 13px 6px;
+    }
+
+    .interact-stat-number {
+        font-size: 20px;
+    }
+
+    .interact-stat-label {
+        font-size: 9px;
+    }
+
+    .interact-gallery {
+        grid-template-rows: 190px 135px 135px auto;
+        gap: 8px;
+    }
+
+    .interact-photo {
+        border-radius: 10px;
+    }
+}
+
